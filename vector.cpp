@@ -9,7 +9,7 @@ vector<int> v;
 
 void print_v()
 {
-    cout << "vÀÇ ¿ø¼Ò : ";
+    cout << "vì˜ ì›ì†Œ : ";
 //    for(int i = 0; i<v.size(); i++)        cout << v[i] << " ";
 //    for(auto k : v)  cout << k << " ";
     for(auto i=v.begin(); i!=v.end(); i++) cout << *i << " ";
@@ -18,25 +18,25 @@ void print_v()
 
 int main()
 {
-    cout << "\n v¿¡ 1~3±îÁö »ðÀÔ\n";
+    cout << "\n vì— 1~3ê¹Œì§€ ì‚½ìž…\n";
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
     print_v(); // 1 2 3
 
-    cout << "\n\n vÀÇ 3¹øÂ° À§Ä¡¿¡ 9 »ðÀÔ\n";
+    cout << "\n\n vì˜ 3ë²ˆì§¸ ìœ„ì¹˜ì— 9 ì‚½ìž…\n";
     v.insert(v.begin() + 3, 9);
     print_v(); // 1 4 2 3
 
-    cout << "\n\n vÀÇ ¸¶Áö¸· ¿ø¼Ò »èÁ¦\n";
+    cout << "\n\n vì˜ ë§ˆì§€ë§‰ ì›ì†Œ ì‚­ì œ\n";
     v.pop_back();
     print_v(); // 1 4 2
 
-    cout << "\n\n vÀÇ ¸Ç µÚ¿¡ 5 »ðÀÔ\n";
+    cout << "\n\n vì˜ ë§¨ ë’¤ì— 5 ì‚½ìž…\n";
     v.push_back(5);
     print_v(); // 1 4 2 6
 
-    cout << "\n\n vÀÇ ¿ø¼Ò ÀüÃ¼ clear!\n";
+    cout << "\n\n vì˜ ì›ì†Œ ì „ì²´ clear!\n";
     v.clear();
     print_v(); //empty
 
