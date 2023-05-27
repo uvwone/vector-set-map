@@ -9,13 +9,13 @@ int main()
     for(int i = 0; i < 10; i++){
         v[i] = i;
     }
-    cout << "Áö¿ì±â Àü: ";
+    cout << "ì§€ìš°ê¸° ì „: ";
     for (int i = 0; i < v.size(); i++){
         cout << v[i] << " ";
     }
     cout << endl;
     v.erase(v.begin() + 5);
-    cout << "5¹ø ÀÎµ¦½º Áö¿î ÈÄ: ";
+    cout << "5ë²ˆ ì¸ë±ìŠ¤ ì§€ìš´ í›„: ";
     for (int i = 0; i < v.size(); i++){
         cout << v[i] << " ";
     }
