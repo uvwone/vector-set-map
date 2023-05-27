@@ -6,20 +6,20 @@ using namespace std;
 vector<int> v;
 
 int main() {
-	// v¿¡ °ª 0~4 °ª ³Ö¾îÁÖ±â
+	// vì— ê°’ 0~4 ê°’ ë„£ì–´ì£¼ê¸°
 	int n; cin >> n;
 	v.resize(n);
 	for (int i=0; i<n; i++) {
 		v[i] = i;
 	}
 
-	// »èÁ¦ Àü vector °ªµé, size, capacity Ãâ·Â
-	cout << "»èÁ¦ Àü vector °ªµé : ";
+	// ì‚­ì œ ì „ vector ê°’ë“¤, size, capacity ì¶œë ¥
+	cout << "ì‚­ì œ ì „ vector ê°’ë“¤ : ";
 	for(auto i = v.begin(); i != v.end(); i++){
         cout << *i << " ";
 	}
 	cout << "\n";
-	cout << "È®ÀÎÀ» À§ÇØ µÚÀÇ °ªµé Ãß°¡·Î Ãâ·Â : ";
+	cout << "í™•ì¸ì„ ìœ„í•´ ë’¤ì˜ ê°’ë“¤ ì¶”ê°€ë¡œ ì¶œë ¥ : ";
 
 	for(auto i = v.begin(); i != v.end(); i++)
 	cout << *i << " ";
@@ -29,16 +29,16 @@ int main() {
 	cout << "capacity : " << v.capacity() << "\n";
 	cout << "============\n";
 
-	// »èÁ¦ : 0~4(Ã³À½ºÎÅÍ ³¡) °ª Áß 1 ¾ø¾Ö±â
+	// ì‚­ì œ : 0~4(ì²˜ìŒë¶€í„° ë) ê°’ ì¤‘ 1 ì—†ì• ê¸°
 	remove(v.begin(), v.end(), 1);
 
-	// »èÁ¦ ÈÄ vector °ªµé, size, capacity Ãâ·Â
-	cout << "»èÁ¦ ÈÄ vector °ªµé : ";
+	// ì‚­ì œ í›„ vector ê°’ë“¤, size, capacity ì¶œë ¥
+	cout << "ì‚­ì œ í›„ vector ê°’ë“¤ : ";
 	for(auto i = v.begin(); i < v.end(); i++){
         cout << *i << " ";
     }
 	cout << "\n";
-	cout << "È®ÀÎÀ» À§ÇØ µÚÀÇ °ªµé Ãß°¡·Î Ãâ·Â : ";
+	cout << "í™•ì¸ì„ ìœ„í•´ ë’¤ì˜ ê°’ë“¤ ì¶”ê°€ë¡œ ì¶œë ¥ : ";
 	for(auto i = v.begin(); i < v.end(); i++){
         cout << *i << " ";
 	}
