@@ -14,13 +14,13 @@ int main()
 
     m.erase('A');                   //m : (B,2) (C,3)
 
-    //mÀüÃ¼¸¦ ¼øÈ¸ÇÏ¸ç key¿Í value Ãâ·Â
+    //mì „ì²´ë¥¼ ìˆœíšŒí•˜ë©° keyì™€ value ì¶œë ¥
     for(it = m.begin(); it != m.end(); it++)
         cout << it->first << ' ' <<it->second << endl;
 
     if(m.find('B') != m.end())
-        cout << "key°ªÀÌ BÀÎ ³ëµå°¡ Á¸ÀçÇÕ´Ï´Ù." << endl;
+        cout << "keyê°’ì´ Bì¸ ë…¸ë“œê°€ ì¡´ì¬í•©ë‹ˆë‹¤." << endl;
     else
-        cout << "key°ªÀÌ BÀÎ ³ëµå°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù." << endl;
+        cout << "keyê°’ì´ Bì¸ ë…¸ë“œê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤." << endl;
     return 0;
 }
