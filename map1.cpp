@@ -13,14 +13,14 @@ int main(void) {
 	if (m.find("A") != m.end()) cout << "find" << endl;
 	else cout << "not find" << endl;
 
-	//ÀÎµ¦½º±â¹Ý
+	//Ã€ÃŽÂµÂ¦Â½ÂºÂ±Ã¢Â¹Ã
 	for (auto iter = m.begin() ; iter !=  m.end(); iter++)
 	{
 		cout << iter->first << " " << iter->second << endl;
 	}
 	cout << endl;
 
-	//¹üÀ§±â¹Ý
+	//Â¹Ã¼Ã€Â§Â±Ã¢Â¹Ã
 	for (auto iter : m) {
 		cout << iter.first << " " << iter.second << endl;
 	}
