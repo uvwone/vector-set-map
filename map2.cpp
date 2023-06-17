@@ -15,7 +15,7 @@ int main()
 {
     pair<int, string> p1;
     p1 = make_pair();
-    p1 = {1,"°³¶ËÀÌ"};
+    p1 = {1,"Â°Â³Â¶Ã‹Ã€ÃŒ"};
 
     cout << p1.first << ',' << p1.second << endl;
 
